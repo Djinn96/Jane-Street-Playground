@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Test</title>
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <div class="container">
+            <div class="title">
+                <h1>Hall of Mirrors</h1>
+                <h5>Based on Jane Street Puzzles March 2025</h5>
+            </div>
+            <div class="control-panel">
+                col:
+                <input type="number" id="grid-col" min="1" max="20" value="10">
+                row:
+                <input type="number" id="grid-row" min="1" max="20" value="10">
+                <button onclick="createGrid()">Create Grid</button>
+                <button onclick="resetMirrors()">Reset Mirrors</button>
+                <button onclick="turnOnAllLasers()">Turn On All Lasers</button>
+                <button onclick="turnOffAllLasers()">Turn Off All Lasers</button>
+            </div>
+            <div id="gridContainer" class="grid-container"></div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
